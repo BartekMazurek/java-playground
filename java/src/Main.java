@@ -1,11 +1,10 @@
 import J0_examples.DepositCalculator;
-import J1_data.types.J1_byteShortIntLong;
-import J1_data.types.J2_floatDouble;
-import J1_data.types.J4_varType;
+import J1_data.types.*;
 
 public class Main {
     public static void main(String[] args) {
 
+        // TYPES
         J1_byteShortIntLong.declare();
 
         J2_floatDouble.declare();
@@ -17,5 +16,11 @@ public class Main {
         float profitValue = calculator.getProfit();
 
         System.out.println("Profit value: " + profitValue);
+
+        J6_string.declare();
+
+        J7_array.declare();
+
+        J8_enum.declare();
     }
 }
