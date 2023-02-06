@@ -1,5 +1,7 @@
 import J0_examples.DepositCalculator;
 import J1_data.types.*;
+import J2_big.numbers.J1_math;
+import J2_big.numbers.J2_bigNumbers;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +24,10 @@ public class Main {
         J7_array.declare();
 
         J8_enum.declare();
+
+        // BIG NUMBERS
+        J1_math.calculate();
+
+        J2_bigNumbers.declare();
     }
 }
