@@ -1,3 +1,4 @@
+import J0_examples.CompoundInterestCalculator;
 import J0_examples.DepositCalculator;
 import J1_data.types.*;
 import J2_big.numbers.J1_math;
@@ -7,27 +8,31 @@ public class Main {
     public static void main(String[] args) {
 
         // TYPES
-        J1_byteShortIntLong.declare();
+        //J1_byteShortIntLong.declare();
 
-        J2_floatDouble.declare();
+        //J2_floatDouble.declare();
 
-        J4_varType.declare(3, 4);
+        //J4_varType.declare(3, 4);
 
-        DepositCalculator calculator = new DepositCalculator();
-        calculator.calculate(6000, 180, 0.03f, 0.19f);
-        float profitValue = calculator.getProfit();
+        //DepositCalculator calculator = new DepositCalculator();
+        //calculator.calculate(6000, 180, 0.03f, 0.19f);
+        //float profitValue = calculator.getProfit();
 
-        System.out.println("Profit value: " + profitValue);
+        //System.out.println("Profit value: " + profitValue);
 
-        J6_string.declare();
+        //J6_string.declare();
 
-        J7_array.declare();
+        //J7_array.declare();
 
-        J8_enum.declare();
+        //J8_enum.declare();
 
         // BIG NUMBERS
-        J1_math.calculate();
+        //J1_math.calculate();
 
-        J2_bigNumbers.declare();
+        //J2_bigNumbers.declare();
+
+        // COMPOUND INTEREST CALCULATOR
+        CompoundInterestCalculator calculator = new CompoundInterestCalculator();
+        calculator.calculate();
     }
 }
