@@ -4,6 +4,7 @@ import J1_data.types.*;
 import J2_big.numbers.J1_math;
 import J2_big.numbers.J2_bigNumbers;
 import J3_oop.J2_CarFinal;
+import J3_oop.J2_StaticExample;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,7 +37,9 @@ public class Main {
         //CompoundInterestCalculator calculator = new CompoundInterestCalculator();
         //calculator.calculate();
 
-        J2_CarFinal finalExample = new J2_CarFinal("Some test name");
-        System.out.printf(finalExample.getName());
+        //J2_CarFinal finalExample = new J2_CarFinal("Some test name");
+        //System.out.printf(finalExample.getName());
+
+        J2_StaticExample.someMethod();
     }
 }
