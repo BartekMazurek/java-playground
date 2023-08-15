@@ -5,6 +5,13 @@ public class J1_Car {
     private String name;
     private String manufacturer;
 
+    // OVERWRITTEN CONSTRUCTOR
+    // JAVA ALLOWS TO DEFINE MORE CONSTRUCTORS THAN ONE
+    public J1_Car() {
+        // WILL CALL SECOND CONSTRUCTOR WITH STRING ARGUMENTS
+        this("Unknown", "Unknown");
+    }
+
     public J1_Car(
             String name,
             String manufacturer
