@@ -5,6 +5,7 @@ import J2_big.numbers.J1_math;
 import J2_big.numbers.J2_bigNumbers;
 import J3_oop.J2_CarFinal;
 import J3_oop.J2_StaticExample;
+import J3_oop.J8_PublicStaticInnerClass;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +41,15 @@ public class Main {
         //J2_CarFinal finalExample = new J2_CarFinal("Some test name");
         //System.out.printf(finalExample.getName());
 
-        J2_StaticExample.someMethod();
+        //J2_StaticExample.someMethod();
+
+        // INNER PUBLIC STATIC CLASS
+        J8_PublicStaticInnerClass innerStaticClass = new J8_PublicStaticInnerClass.Builder().
+                setFirstValue("Test").
+                setSecondValue("Test 2").
+                getExample();
+
+        innerStaticClass.getFirstValue();
+        innerStaticClass.getSecondValue();
     }
 }
